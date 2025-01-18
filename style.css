@@ -1,0 +1,115 @@
+@import "https://unpkg.com/open-props@1.6.17/easings.min.css";
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.game-container {
+    display: inline-block;
+    text-align: center;
+}
+
+.numbers-border {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.number {
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.jackpot {
+    background-color: gold;
+    border-color: red;
+    color: white;
+}
+
+/* Slot machine animation setup */
+@keyframes spin {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-900%);
+    }
+}
+
+.number {
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.number span {
+    display: inline-block;
+    animation: none; /* Default state */
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.numbers-border {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.jackpot {
+    background-color: gold;
+    border-color: red;
+    color: gold;
+    box-shadow: 0 0 40px red;
+}
+
+.two-match {
+    background-color: lightblue;
+    border-color: darkblue;
+    color: black;
+    box-shadow: 0 0 40px darkblue;
+}
+
